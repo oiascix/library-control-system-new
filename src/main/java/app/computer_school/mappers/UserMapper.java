@@ -15,7 +15,7 @@ public class UserMapper implements IModelMapper<User> {
         user.setFirstname(rs.getString("firstname"));
         user.setLastname(rs.getString("lastname"));
         user.setMiddlename(rs.getString("middlename"));
-        user.setBitrthDate(rs.getString("birth_date"));
+        user.setBitrthDate(rs.getString("birthdate"));
         user.setPhone(rs.getString("phone"));
         user.setEmail(rs.getString("email"));
 
