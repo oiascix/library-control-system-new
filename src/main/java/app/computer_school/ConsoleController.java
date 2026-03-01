@@ -27,14 +27,13 @@ public class ConsoleController
     public void run() throws SQLException {
 
         QueryBuilder<User> builder = User.query()
-                .where("lastname", "ilike", "%Параво%")
+                .where("lastname", "ilike", "%Параво%");
 
         List<User> result = builder.find();
 
         for (User user : result) {
             System.out.println(user);
         }
-
 
         this.printWelcome();
 
